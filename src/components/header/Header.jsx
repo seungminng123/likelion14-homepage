@@ -6,64 +6,83 @@ export default function Header() {
     const navigate = useNavigate();
 
     return (
-        <>
         <HeaderContainer>
-            <Logo src={LogoUrl} onClick={() => navigate("/")} />
-            <TitleStyle>멋쟁이사자처럼 서경대학교</TitleStyle>
-            <Divider />
-            
-            <span></span>
+            <LogoBox onClick={() => navigate('/')}>
+                <Logo src={LogoUrl} />
+                <TitleStyle>멋쟁이사자처럼 서경대학교</TitleStyle>
+            </LogoBox>
 
-            <Divider />
+            <span style={{ flex: 1 }}></span>
 
-            <TextStyle>지원하기</TextStyle>
-            <TextStyle>프로젝트</TextStyle>
-            <TextStyle>구성원</TextStyle>
-            
-            <Divider />
-            
-            <TextStyle>로그인/회원가입</TextStyle>
+            <MenuBox>
+                <TextStyle>지원하기</TextStyle>
+                <TextStyle>프로젝트</TextStyle>
+                <TextStyle>구성원</TextStyle>
+            </MenuBox> 
+            <LoginTextStyle>로그인/회원가입</LoginTextStyle>
         </HeaderContainer>
-        <Divider2/> 
-        </>
     );
 }
+
+
 
 const Logo = styled.img`
     width: 46px;
     height: 46px;
 `;
-
 const HeaderContainer = styled.header`
-    padding-top: 16px;
     display: flex;
-    justify-content: space-between; 
-;`
+    width: 100%;
+    height: 68px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+`;
 
+const LogoBox = styled.div`
+    width: 408px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-right: 1px solid black;
+    margin-left: 55px;
+    cursor: pointer;
+`;
+
+const MenuBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+`;
 
 const TitleStyle = styled.div`
-    padding-top: 15px;
     color: #1A1A1A;
     font-size: 22px;
     font-family: Pretendard;
     font-weight: 700;
-
+    justify-content: center;
 `;
 const TextStyle = styled.div`
-    padding-top: 15px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
     color: #1A1A1A;
     font-size: 18px;
-    font-family: Pretendard;
     font-weight: 600;
-    word-wrap: break-word
+    justify-content: center;
+    cursor: pointer;
 `;
-const Divider = styled.div`
-    width: 1px;
-    height: 68px;
-    background-color: #1A1A1A;
-`;
-const Divider2 = styled.div`
-    width: 1200px;
-    height: 1px;
-    background-color: #1A1A1A;
+
+const LoginTextStyle = styled.div`
+    width: 204px;
+    display: flex;
+    align-items: center;
+
+    color: #1A1A1A;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    cursor: pointer;
 `;
