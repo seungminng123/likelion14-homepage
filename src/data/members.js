@@ -366,7 +366,7 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-    // 13기
+    /*
     {
         generation: 13,
         position: "아기사자",
@@ -393,5 +393,6 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-
+    */
 ]
+export default members;

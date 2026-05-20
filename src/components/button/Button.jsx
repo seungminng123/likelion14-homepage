@@ -15,7 +15,7 @@ const StyledButton = styled.button`
     justify-content : center;
     align-items: center;
     
-    background-color: #F8FBE7;
+    background-color: #FAFBF8;
     font-size: 18px;
     font-family: Pretendard;
     font-weight: 500;
