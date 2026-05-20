@@ -32,6 +32,12 @@ const TextBox = styled.div`
     height : 100px;
 `; 
 const Text1 = styled.div`
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    border: 3px solid #1a1a1a;
+    margin-bottom :17px;
+
     color: #1A1A1A;
     font-size: 36px;
     font-family: Pretendard;
@@ -48,4 +54,5 @@ const Text2 = styled.div`
 const ButtonBox = styled.div`
     display: flex;
     gap: 18px;
+    margin-top: 59px;
 `;
