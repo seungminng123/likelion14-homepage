@@ -1,6 +1,7 @@
 const members = [
     //운영진
     {   
+        id: 1,
         generation: 14,
         position : "대표",
         track : null,
@@ -9,6 +10,7 @@ const members = [
         studentId: "20학번",
     },
     {   
+        id: 2,
         generation: 14,
         position : "부대표",
         track : "PO",
@@ -17,6 +19,7 @@ const members = [
         studentId: "23학번",
     },
     {   
+        id: 3,
         generation: 14,
         position : "운영진",
         track : "PO",
@@ -25,6 +28,7 @@ const members = [
         studentId: "20학번",
     },
     {   
+        id: 4,
         generation: 14,
         position : "운영진",
         track : "PO",
@@ -33,6 +37,7 @@ const members = [
         studentId: "22학번",
     },
     {   
+        id: 5,
         generation: 14,
         position : "운영진",
         track : "PO",
@@ -41,6 +46,7 @@ const members = [
         studentId: "23학번",
     },
     {   
+        id: 6,
         generation: 14,
         position : "운영진",
         track : "FRONTEND",
@@ -49,6 +55,7 @@ const members = [
         studentId: "23학번",
     },
     {   
+        id: 7,
         generation: 14,
         position : "운영진",
         track : "FRONTEND",
@@ -57,6 +64,7 @@ const members = [
         studentId: "22학번",
     },
     {   
+        id: 8,
         generation: 14,
         position : "운영진",
         track : "FRONTEND",
@@ -65,6 +73,7 @@ const members = [
         studentId: "25학번",
     },
     {   
+        id: 9,
         generation: 14,
         position : "운영진",
         track : "BACKEND",
@@ -73,6 +82,7 @@ const members = [
         studentId: "21학번",
     },
     {   
+        id: 10,
         generation: 14,
         position : "운영진",
         track : "BACKEND",
@@ -81,6 +91,7 @@ const members = [
         studentId: "23학번",
     },
     {   
+        id: 11,
         generation: 14,
         position : "운영진",
         track : "BACKEND",
@@ -91,6 +102,7 @@ const members = [
     //아기사자
     // PO
     {
+        id: 12,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -98,7 +110,8 @@ const members = [
         major: "소프트웨어학과",
         studentId: "21학번",
     },
-    {
+    {   
+        id: 13,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -107,6 +120,7 @@ const members = [
         studentId: "25학번",
     },
     {
+        id: 14,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -114,7 +128,8 @@ const members = [
         major: "미래융합학부",
         studentId: "25학번",
     },
-    {
+    {   
+        id: 15,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -123,6 +138,7 @@ const members = [
         studentId: "24학번",
     },
     {
+        id: 16,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -131,6 +147,7 @@ const members = [
         studentId: "26학번",
     },
     {
+        id: 17,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -139,6 +156,7 @@ const members = [
         studentId: "26학번",
     },
     {
+        id: 18,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -147,6 +165,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 19,
         generation: 14,
         position: "아기사자",
         track: "PO",
@@ -157,6 +176,7 @@ const members = [
 
     // FRONTEND
     {
+        id: 20,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -165,6 +185,7 @@ const members = [
         studentId: "24학번",
     },
     {
+        id: 21,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -173,6 +194,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id:22,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -181,6 +203,7 @@ const members = [
         studentId: "24학번",
     },
     {
+        id:23,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -189,6 +212,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id:24,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -196,7 +220,8 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-    {
+    {   
+        id:25,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -205,6 +230,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id:26,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -213,6 +239,7 @@ const members = [
         studentId: "21학번",
     },
     {
+        id: 27,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -221,6 +248,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 28,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -229,6 +257,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 29,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -237,6 +266,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 30,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -245,6 +275,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 31,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -253,6 +284,7 @@ const members = [
         studentId: "21학번",
     },
     {
+        id: 32,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -261,6 +293,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 33,
         generation: 14,
         position: "아기사자",
         track: "FRONTEND",
@@ -271,6 +304,7 @@ const members = [
 
     // BACKEND
     {
+        id: 34,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -279,6 +313,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 35,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -287,6 +322,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 36,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -295,6 +331,7 @@ const members = [
         studentId: "24학번",
     },
     {
+        id: 37,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -303,6 +340,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 38,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -311,6 +349,7 @@ const members = [
         studentId: "20학번",
     },
     {
+        id: 39,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -319,6 +358,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 40,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -327,6 +367,7 @@ const members = [
         studentId: "23학번",
     },
     {
+        id: 41,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -335,6 +376,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 42,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -343,6 +385,7 @@ const members = [
         studentId: "22학번",
     },
     {
+        id: 43,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -351,6 +394,7 @@ const members = [
         studentId: "21학번",
     },
     {
+        id: 44,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -359,6 +403,7 @@ const members = [
         studentId: "21학번",
     },
     {
+        id: 45,
         generation: 14,
         position: "아기사자",
         track: "BACKEND",
@@ -366,8 +411,8 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-    /*
     {
+        id: 46,
         generation: 13,
         position: "아기사자",
         track: "FRONTEND",
@@ -375,17 +420,17 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-    //12기
-    {
+    {   
+        id: 47,
         generation: 12,
         position: "아기사자",
         track: "FRONTEND",
         name: "김멋사",
         major: "소프트웨어학과",
         studentId: "23학번",
-    },
-    // 11기
+    },    
     {
+        id: 48,
         generation: 11,
         position: "아기사자",
         track: "FRONTEND",
@@ -393,6 +438,5 @@ const members = [
         major: "소프트웨어학과",
         studentId: "23학번",
     },
-    */
 ]
 export default members;
