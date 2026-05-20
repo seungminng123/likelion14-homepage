@@ -3,32 +3,37 @@ import Button from "../components/button/Button"
 import styled from "styled-components";
 import InfoBox from "../components/InfoBox";
 import members from "../data/members";
+import {useState} from "react"
 
 
 export default function Members() {
-    const boss = members.filter((member)=> member.position === "대표" || member.position === "부대표");
+    const [selectedGeneration, setSelectedGeneration] = useState(14);
 
-    const managementPO = members.filter((member) => member.position === "운영진" || member.position ==="부대표"&& member.track ==="PO");
-    const managementFE = members.filter((member) => member.position === "운영진" && member.track ==="FRONTEND");
-    const managementBE = members.filter((member) => member.position === "운영진" && member.track ==="BACKEND");
+    const filterMembers = members.filter((member)=>member.generation === selectedGeneration);
 
-    const babylionPO = members.filter((member)=> member.position === "아기사자" && member.track =="PO");
-    const babylionFE = members.filter((member)=> member.position === "아기사자" && member.track =="FRONTEND");
-    const babylionBE = members.filter((member)=> member.position === "아기사자" && member.track =="BACKEND");
+    const boss = filterMembers.filter((member)=> member.position === "대표" || member.position === "부대표");
+
+    const managementPO = filterMembers.filter((member) => (member.position === "운영진" || member.position ==="부대표")&& member.track ==="PO");
+    const managementFE = filterMembers.filter((member) => member.position === "운영진" && member.track ==="FRONTEND");
+    const managementBE = filterMembers.filter((member) => member.position === "운영진" && member.track ==="BACKEND");
+
+    const babylionPO = filterMembers.filter((member)=> member.position === "아기사자" && member.track ==="PO");
+    const babylionFE = filterMembers.filter((member)=> member.position === "아기사자" && member.track ==="FRONTEND");
+    const babylionBE = filterMembers.filter((member)=> member.position === "아기사자" && member.track ==="BACKEND");
     return (
         <Wrapper>
             <Container>
-                <TopSection/>
+                <TopSection 
+                    selectedGeneration={selectedGeneration}
+                    setSelectedGeneration={setSelectedGeneration}/>
             </Container>
             <PositionText>운영진</PositionText>
                 <InfoContainer> 
                     {boss.map((member)=>
-                        <card>
+                        <Card key={member.id}>
                             <TrackText>{member.position}</TrackText>               
-                            <InfoBox
-                                key={member.name}                   
-                                member={member}/>
-                        </card>    
+                            <InfoBox member={member}/>
+                        </Card>    
                     )}
                 </InfoContainer>
 
@@ -36,7 +41,7 @@ export default function Members() {
                     <InfoContainer>
                         {managementPO.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -45,7 +50,7 @@ export default function Members() {
                     <InfoContainer>
                         {managementFE.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -54,7 +59,7 @@ export default function Members() {
                     <InfoContainer>
                         {managementBE.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -65,7 +70,7 @@ export default function Members() {
                     <InfoContainer>
                         {babylionPO.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -74,7 +79,7 @@ export default function Members() {
                     <InfoContainer>
                         {babylionFE.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -83,7 +88,7 @@ export default function Members() {
                     <InfoContainer>
                         {babylionBE.map((member)=>
                         <InfoBox
-                            key={member.name}
+                            key={member.id}
                             member={member}
                         />
                     )}
@@ -100,7 +105,7 @@ const Wrapper = styled.div`
 `;
 const Container = styled.div`
     background-color: #FAFBF8;
-    width : 1440px;
+    max-width : 1440px;
 
     word-wrap: break-word;
     padding-top: 85px;
@@ -130,7 +135,7 @@ const TrackText = styled.div`
     word-wrap: break-word;  
     margin-bottom: 21px;
 `;
-const card = styled.div`
+const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;

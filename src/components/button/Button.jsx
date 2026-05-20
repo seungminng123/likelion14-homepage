@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export default function Button({children}){
+export default function Button({children, onClick, $active}){
     return(
-        <StyledButton> 
+        <StyledButton onClick={onClick} $active={$active}> 
             {children}
         </StyledButton>
     )
@@ -15,7 +15,7 @@ const StyledButton = styled.button`
     justify-content : center;
     align-items: center;
     
-    background-color: #FAFBF8;
+    background-color: ${({ $active }) => $active ? "#C6E400" : "white"};
     font-size: 18px;
     font-family: Pretendard;
     font-weight: 500;

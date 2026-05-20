@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Button from "../components/button/Button";
 
-export default function TopSection(){
+export default function TopSection({selectedGeneration, setSelectedGeneration}){
+
     return(
         <>
             <TextBox>
@@ -9,10 +10,18 @@ export default function TopSection(){
                 <Text2>서경대학교 멋쟁이사자처럼의 구성원들을 살펴보세요.</Text2>
             </TextBox>
             <ButtonBox>
-                <Button> 14기 </Button>
-                <Button> 13기 </Button>
-                <Button> 12기 </Button>
-                <Button> 11기 </Button>
+                <Button 
+                    $active={selectedGeneration === 14}
+                    onClick={() => setSelectedGeneration(14)}> 14기 </Button>
+                <Button 
+                    $active={selectedGeneration === 13}
+                    onClick={() => setSelectedGeneration(13)}> 13기 </Button>
+                <Button 
+                    $active={selectedGeneration === 12}
+                    onClick={() => setSelectedGeneration(12)}> 12기 </Button>
+                <Button 
+                    $active={selectedGeneration === 11}
+                    onClick={() => setSelectedGeneration(11)}> 11기 </Button>
             </ButtonBox>
         </>
     )
@@ -40,4 +49,3 @@ const ButtonBox = styled.div`
     display: flex;
     gap: 18px;
 `;
- 
