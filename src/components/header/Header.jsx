@@ -15,11 +15,11 @@ export default function Header() {
             <span style={{ flex: 1 }}></span>
 
             <MenuBox>
-                <TextStyle>지원하기</TextStyle>
-                <TextStyle>프로젝트</TextStyle>
-                <TextStyle>구성원</TextStyle>
+                <TextStyle onClick={() => navigate('/recruit')}>지원하기</TextStyle>
+                <TextStyle onClick={() => navigate('/project')}>프로젝트</TextStyle>
+                <TextStyle onClick={() => navigate('/members')}>구성원</TextStyle>
             </MenuBox> 
-            <LoginTextStyle>로그인/회원가입</LoginTextStyle>
+            <LoginTextStyle onClick = {() => navigate('/login')}>로그인/회원가입</LoginTextStyle>
         </HeaderContainer>
     );
 }
